@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/react-chakraUI-firstSteps/static/js/main.f17de4d0.chunk.js",
+    "main.js.map": "/react-chakraUI-firstSteps/static/js/main.f17de4d0.chunk.js.map",
+    "runtime-main.js": "/react-chakraUI-firstSteps/static/js/runtime-main.8ec4d7d4.js",
+    "runtime-main.js.map": "/react-chakraUI-firstSteps/static/js/runtime-main.8ec4d7d4.js.map",
+    "static/js/2.317428ce.chunk.js": "/react-chakraUI-firstSteps/static/js/2.317428ce.chunk.js",
+    "static/js/2.317428ce.chunk.js.map": "/react-chakraUI-firstSteps/static/js/2.317428ce.chunk.js.map",
+    "static/js/3.ca56d820.chunk.js": "/react-chakraUI-firstSteps/static/js/3.ca56d820.chunk.js",
+    "static/js/3.ca56d820.chunk.js.map": "/react-chakraUI-firstSteps/static/js/3.ca56d820.chunk.js.map",
+    "index.html": "/react-chakraUI-firstSteps/index.html",
+    "static/js/2.317428ce.chunk.js.LICENSE.txt": "/react-chakraUI-firstSteps/static/js/2.317428ce.chunk.js.LICENSE.txt",
+    "static/media/logo.034ef726.svg": "/react-chakraUI-firstSteps/static/media/logo.034ef726.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ec4d7d4.js",
+    "static/js/2.317428ce.chunk.js",
+    "static/js/main.f17de4d0.chunk.js"
+  ]
+}
