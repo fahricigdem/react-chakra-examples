@@ -14,7 +14,9 @@ import {
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <ChakraProvider theme={theme}>
+      <App />
+    </ChakraProvider>
   </StrictMode>,
   document.getElementById('root')
 );
