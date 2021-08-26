@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Flex, Wrap } from "@chakra-ui/react";
 import { VStack, Container, Heading } from "@chakra-ui/react";
 import { HStack, PinInput, PinInputField } from "@chakra-ui/react";
 import { AlertDialog, AlertDialogBody, AlertDialogFooter, AlertDialogHeader, AlertDialogContent, AlertDialogOverlay, } from "@chakra-ui/react";
@@ -95,7 +95,7 @@ export default function App2() {
         </HStack>
       </Container>
 
-      <Heading>Aler Dialog</Heading>
+      <Heading>Alert Dialog</Heading>
       <Container maxW="container.md">
         <Button colorScheme="red" m="5" onClick={() => setIsOpen(true)}>
           Delete Customer
@@ -128,9 +128,25 @@ export default function App2() {
           </AlertDialogOverlay>
         </AlertDialog>
       </Container>
-      <Container>
+
+      <Container maxW="container.md" bg="grey" mb="40" >
+        <Wrap color="grey" direction="row" textAlign="center" wrap="true">
+
+          <Box bg="red.300" w="180px" height="40" >1</Box>
+          <Box bg="blue.200" w="560px" height="60" >2</Box>
+          <Box bg="green.200" w="160px" height="40">3</Box>
+          <Box bg="yellow.200" w="260px" height="40">4</Box>
+          <Box bg="tomato" w="260px" height="40">5</Box>
+          <Box bg="pink" w="560px" height="40">6</Box>
+
+        </Wrap>
+      </Container>
+
+      <Container maxW="container.md" bg="grey">
+
 
       </Container>
+
     </>
 
   );

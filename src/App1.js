@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
   Flex,
-  Heading,
+  Heading, Text,
   Input,
   Button,
   InputGroup,
@@ -16,14 +16,17 @@ import {
   InputRightElement
 } from "@chakra-ui/react";
 import { FaUserAlt, FaLock } from "react-icons/fa";
+import { IconButton } from "@chakra-ui/react"
+import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
 
 const App1 = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [email, setEmail] = useState("");
+  const [display, setDisplay] = useState("none");
 
-  const handleShowClick = () => setShowPassword(!showPassword);
 
   return (
 
@@ -44,7 +47,7 @@ const App1 = () => {
         <Avatar bg="teal.500" />
         <Heading color="teal.400">Welcome</Heading>
         <Box minW={{ base: "90%", md: "468px" }}>
-          <form>
+          <form onSubmit={(e) => { e.preventDefault(); setDisplay("block"); alert(`Hallo ${email}`) }}>
             <Stack
               spacing={4}
               p="1rem"
@@ -57,7 +60,7 @@ const App1 = () => {
                     pointerEvents="none"
                     children={<CFaUserAlt color="gray.300" />}
                   />
-                  <Input type="email" placeholder="email address" />
+                  <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="email address" isRequired />
                 </InputGroup>
               </FormControl>
               <FormControl>
@@ -70,11 +73,12 @@ const App1 = () => {
                   <Input
                     type={showPassword ? "text" : "password"}
                     placeholder="Password"
+                    isRequired
                   />
-                  <InputRightElement width="4.5rem">
-                    <Button h="1.75rem" size="sm" onClick={handleShowClick}>
-                      {showPassword ? "Hide" : "Show"}
-                    </Button>
+                  <InputRightElement width="3rem">
+                    <IconButton h="1.75rem" size="sm" onClick={() => setShowPassword(!showPassword)}
+                      icon={showPassword ? <ViewOffIcon /> : <ViewIcon />}
+                    />
                   </InputRightElement>
                 </InputGroup>
                 <FormHelperText textAlign="right">
@@ -96,10 +100,11 @@ const App1 = () => {
       </Stack>
       <Box>
         New to us?{" "}
-        <Link color="teal.500" href="#">
-          Sign Up
-        </Link>
+        <Link color="teal.500" href="#"> Sign Up </Link>
       </Box>
+      <Heading display={display}>
+        {email}
+      </Heading>
     </Flex>
 
   );
