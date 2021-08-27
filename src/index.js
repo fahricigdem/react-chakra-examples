@@ -1,6 +1,7 @@
 import { ColorModeScript } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+import Nefino from './Nefino';
 import App from './App';
 import App1 from './App1';
 import App2 from './App2';
@@ -10,6 +11,18 @@ import {
   ChakraProvider,
   theme
 } from '@chakra-ui/react';
+
+
+ReactDOM.render(
+  <StrictMode>
+    <ColorModeScript />
+    <ChakraProvider theme={theme}>
+      <Nefino />
+    </ChakraProvider>
+  </StrictMode>,
+  document.getElementById('root-1')
+);
+
 
 ReactDOM.render(
   <StrictMode>
