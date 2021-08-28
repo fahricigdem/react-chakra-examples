@@ -1,10 +1,9 @@
 import { ColorModeScript } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import Nefino from './Nefino';
-import App from './App';
-import App1 from './App1';
-import App2 from './App2';
+import Nefino from './Nefino/Nefino';
+import Todo from './Todo/App';
+
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import {
@@ -20,27 +19,6 @@ ReactDOM.render(
       <Nefino />
     </ChakraProvider>
   </StrictMode>,
-  document.getElementById('root-1')
-);
-
-
-ReactDOM.render(
-  <StrictMode>
-    <ColorModeScript />
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
-  </StrictMode>,
-  document.getElementById('root')
-);
-
-ReactDOM.render(
-  <StrictMode>
-    <ColorModeScript />
-    <ChakraProvider theme={theme}>
-      <App1 />
-    </ChakraProvider>
-  </StrictMode>,
   document.getElementById('root1')
 );
 
@@ -48,7 +26,7 @@ ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
     <ChakraProvider theme={theme}>
-      <App2 />
+      <Todo />
     </ChakraProvider>
   </StrictMode>,
   document.getElementById('root2')

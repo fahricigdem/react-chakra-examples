@@ -53,7 +53,7 @@ export default function NefinoHome() {
                 </VStack>
                 <VStack
                     ml="6"
-                    spacing={["1vw", "2vw"]}
+                    spacing='-1vw'
                     mt="3vh"
                     align="flex-start"
                 >
