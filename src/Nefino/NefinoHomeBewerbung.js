@@ -14,8 +14,8 @@ export default function NefinoHomeBewerbung() {
             <Heading>Job mit Sinn gesucht?</Heading>
             <Text>Wir suchen Verstärkung! Werde jetzt Teil unseres Teams und setze unsere Vision in die Realität um. Bei uns findest du ein spannendes Arbeitsumfeld im Bereich der erneuerbaren Energien, qualifizierte DataAnalytics- und Softwareentwicklungsaufgaben rund um die Wind- und Solarenergie, flexibles Arbeiten und ein besonders aufgeschlossenes Team.</Text>
 
-            <SimpleGrid columns={2} spacing="10vw">
-                <Text as="strong" height="80px" width="40vw">Wir freuen uns auf dich!</Text>
+            <SimpleGrid columns={{ base: "1", md: "2" }} spacing={{ base: "0vw", md: "10vw" }}>
+                <Text as="strong" height="80px" width={{ base: "80vw", md: "45vw" }}>Wir freuen uns auf dich!</Text>
                 <Box height="80px" align="center"><Button bg="blue.700" rounded="false">Jetzt Bewerben</Button></Box>
             </SimpleGrid>
 
