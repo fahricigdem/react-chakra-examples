@@ -7,8 +7,6 @@ export default function Nefino() {
   return (
     <>
       <NefinoHome />
-      <NefinoHomeBewerbung />
-      <WieArbeitet />
     </>
   );
 }

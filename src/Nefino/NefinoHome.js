@@ -4,14 +4,34 @@ import {
     VStack,
     chakra
 } from "@chakra-ui/react";
-
+import React, { useState, useEffect } from 'react';
 import Navbar from "./NefinoNavbar"
+import NavbarWhite from "./NefinoNavbarWhite"
+import NefinoHomeBewerbung from "./NefinoHomeBewerbung"
+import WieArbeitet from "./WieArbeitet"
 
 export default function NefinoHome() {
 
 
+    const [scrolling, setScrolling] = useState(false);
+
+    useEffect(() => {
+
+        function onScroll() {
+            window.pageYOffset > 1 ? setScrolling(false) : setScrolling(true);
+        }
+
+        window.addEventListener("scroll", onScroll);
+        console.log("scrolling", scrolling)
+        console.log("pageYOffset", window.pageYOffset)
+
+        return () => window.removeEventListener("scroll", onScroll);
+    });
+
     return (
+
         <>
+
             <chakra.div
                 color="white"
                 backgroundImage="url(https://www.nefino.de/wp-content/uploads/2021/03/background.svg)"
@@ -19,13 +39,19 @@ export default function NefinoHome() {
                 backgroundRepeat="no-repeat"
                 h="100vh"
             >
-                <Navbar />
+
+                {scrolling ? <Navbar /> : <NavbarWhite />}
+
+
+
+
 
                 <VStack
                     ml="6"
                     spacing={["2vw"]}
-                    mt="15vh"
+                    mt="18vh"
                     align="flex-start"
+                    position="absolute"
 
                 >
                     <Box>
@@ -54,8 +80,9 @@ export default function NefinoHome() {
                 <VStack
                     ml="6"
                     spacing='-1vw'
-                    mt="3vh"
+                    mt="38vh"
                     align="flex-start"
+                    position="absolute"
                 >
                     <chakra.h1
                         fontSize={["4vw"]}
@@ -98,6 +125,8 @@ export default function NefinoHome() {
 
                 ></Box>
             </chakra.div>
+            <NefinoHomeBewerbung />
+            <WieArbeitet />
         </>
     );
 }

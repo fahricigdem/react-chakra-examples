@@ -23,20 +23,23 @@ const NavLink = ({ children }) => (
 
 
 
-export default function NefinoNavbar() {
+export default function NefinoNavbarWhite() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
 
-      <Box px={4} py={3} width="100%" position="fixed" >
-        <HStack h={10} >
+      <Box px={4} py={2} pos="fixed" zIndex="1000" width="100%"
+        bg="white"
+        color="blue.600"
+      >
+        <HStack h={10}>
           <Link p="2.5" ml="2.5">
             <Image
               width="153px"
               height="40px"
-              //src="https://www.nefino.de/wp-content/uploads/2021/02/Nefino_logo.png"
-              src="https://www.nefino.de/wp-content/uploads/2021/02/Nefino_white.svg"
+              src="https://www.nefino.de/wp-content/uploads/2021/02/Nefino_logo.png"
+            //src="https://www.nefino.de/wp-content/uploads/2021/02/Nefino_white.svg"
             />
           </Link>
 

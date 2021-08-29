@@ -25,7 +25,7 @@ const App = () => {
     ////user interface//////////////////////////////
     return (
         <Container h="100vh">
-            <VStack m="5" mt="10vh" >
+            <VStack m="5" mt="10vh">
 
                 <Heading size="3xl" mb="8" color="blue.400">Todo App</Heading>
                 <VStack align="left" w="100%" p="5" divider={<StackDivider borderColor="blue.100" />} borderColor="blue.200" borderWidth='2px' borderRadius="md" boxShadow="xl">
@@ -37,8 +37,10 @@ const App = () => {
                     </Flex>)}
 
                 </VStack>
-                <Input type="text" placeholder="add new task!" value={text} onChange={(e) => setText(e.target.value)} onKeyUp={handleEnter} borderRadius="xl" borderColor="blue.100" />
-                <Text as="i" mt="4">*with localStorage</Text>
+                <br />
+                <Input w="80%" type="text" placeholder="add new task!" value={text} onChange={(e) => setText(e.target.value)} onKeyUp={handleEnter} borderRadius="xl" borderColor="blue.100" />
+                <br />
+                <Text as="i" width="100%" paddingLeft="3">*with localStorage</Text>
             </VStack>
 
         </Container>

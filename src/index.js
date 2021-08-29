@@ -3,6 +3,7 @@ import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import Nefino from './Nefino/Nefino';
 import Todo from './Todo/App';
+//import './index.css'
 
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
