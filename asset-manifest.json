@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/react-chakra-examples/static/js/main.86e01f25.chunk.js",
-    "main.js.map": "/react-chakra-examples/static/js/main.86e01f25.chunk.js.map",
-    "runtime-main.js": "/react-chakra-examples/static/js/runtime-main.1871f1d3.js",
-    "runtime-main.js.map": "/react-chakra-examples/static/js/runtime-main.1871f1d3.js.map",
-    "static/js/2.c81e5267.chunk.js": "/react-chakra-examples/static/js/2.c81e5267.chunk.js",
-    "static/js/2.c81e5267.chunk.js.map": "/react-chakra-examples/static/js/2.c81e5267.chunk.js.map",
-    "static/js/3.2f11b7b8.chunk.js": "/react-chakra-examples/static/js/3.2f11b7b8.chunk.js",
-    "static/js/3.2f11b7b8.chunk.js.map": "/react-chakra-examples/static/js/3.2f11b7b8.chunk.js.map",
+    "main.js": "/react-chakra-examples/static/js/main.1077e7e3.chunk.js",
+    "main.js.map": "/react-chakra-examples/static/js/main.1077e7e3.chunk.js.map",
+    "runtime-main.js": "/react-chakra-examples/static/js/runtime-main.dcbb6d91.js",
+    "runtime-main.js.map": "/react-chakra-examples/static/js/runtime-main.dcbb6d91.js.map",
+    "static/js/2.2c015573.chunk.js": "/react-chakra-examples/static/js/2.2c015573.chunk.js",
+    "static/js/2.2c015573.chunk.js.map": "/react-chakra-examples/static/js/2.2c015573.chunk.js.map",
+    "static/js/3.c6a716fe.chunk.js": "/react-chakra-examples/static/js/3.c6a716fe.chunk.js",
+    "static/js/3.c6a716fe.chunk.js.map": "/react-chakra-examples/static/js/3.c6a716fe.chunk.js.map",
     "index.html": "/react-chakra-examples/index.html",
-    "static/js/2.c81e5267.chunk.js.LICENSE.txt": "/react-chakra-examples/static/js/2.c81e5267.chunk.js.LICENSE.txt",
+    "static/js/2.2c015573.chunk.js.LICENSE.txt": "/react-chakra-examples/static/js/2.2c015573.chunk.js.LICENSE.txt",
     "static/media/analysis.5ca95dc0.png": "/react-chakra-examples/static/media/analysis.5ca95dc0.png",
     "static/media/cloud-computing.6c286ec3.png": "/react-chakra-examples/static/media/cloud-computing.6c286ec3.png",
     "static/media/software.05bdc3e9.png": "/react-chakra-examples/static/media/software.05bdc3e9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1871f1d3.js",
-    "static/js/2.c81e5267.chunk.js",
-    "static/js/main.86e01f25.chunk.js"
+    "static/js/runtime-main.dcbb6d91.js",
+    "static/js/2.2c015573.chunk.js",
+    "static/js/main.1077e7e3.chunk.js"
   ]
 }
