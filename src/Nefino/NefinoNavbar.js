@@ -4,6 +4,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import React, { useState, useEffect } from 'react';
 
 const Links = ['Home', 'Aktuelles', 'Leistungen', 'Kontakt', 'Karriere'];
 
@@ -20,23 +21,43 @@ const NavLink = ({ children }) => (
   </Link>
 );
 
-
-
-
 export default function NefinoNavbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+
+    function onScroll() {
+      window.pageYOffset > 1 ? setScrolling(true) : setScrolling(false);
+    }
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  });
+
+  let logo = ""
+  {
+    scrolling ? logo = "https://www.nefino.de/wp-content/uploads/2021/02/Nefino_logo.png"
+      : logo = "https://www.nefino.de/wp-content/uploads/2021/02/Nefino_white.svg"
+  }
 
   return (
     <>
 
-      <Box px={4} py={3} width="100%" position="fixed" >
+      <Box px={4} py={3} width="100%" position="fixed" zIndex="1000"
+        color={scrolling && "blue.600"}
+        bg={scrolling && "white"}
+      >
+
         <HStack h={10} >
           <Link p="2.5" ml="2.5">
             <Image
               width="153px"
               height="40px"
               //src="https://www.nefino.de/wp-content/uploads/2021/02/Nefino_logo.png"
-              src="https://www.nefino.de/wp-content/uploads/2021/02/Nefino_white.svg"
+              //src="https://www.nefino.de/wp-content/uploads/2021/02/Nefino_white.svg"
+              src={logo}
             />
           </Link>
 

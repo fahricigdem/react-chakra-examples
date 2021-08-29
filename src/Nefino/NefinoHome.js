@@ -4,32 +4,13 @@ import {
     VStack,
     chakra
 } from "@chakra-ui/react";
-import React, { useState, useEffect } from 'react';
 import Navbar from "./NefinoNavbar"
-import NavbarWhite from "./NefinoNavbarWhite"
 import NefinoHomeBewerbung from "./NefinoHomeBewerbung"
 import WieArbeitet from "./WieArbeitet"
 
 export default function NefinoHome() {
 
-
-    const [scrolling, setScrolling] = useState(false);
-
-    useEffect(() => {
-
-        function onScroll() {
-            window.pageYOffset > 1 ? setScrolling(false) : setScrolling(true);
-        }
-
-        window.addEventListener("scroll", onScroll);
-        console.log("scrolling", scrolling)
-        console.log("pageYOffset", window.pageYOffset)
-
-        return () => window.removeEventListener("scroll", onScroll);
-    });
-
     return (
-
         <>
 
             <chakra.div
@@ -40,11 +21,7 @@ export default function NefinoHome() {
                 h="100vh"
             >
 
-                {scrolling ? <Navbar /> : <NavbarWhite />}
-
-
-
-
+                <Navbar />
 
                 <VStack
                     ml="6"
