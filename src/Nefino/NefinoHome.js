@@ -2,7 +2,8 @@ import {
     Heading,
     Box,
     VStack,
-    chakra
+    chakra,
+    Spacer
 } from "@chakra-ui/react";
 import Navbar from "./NefinoNavbar"
 import NefinoHomeBewerbung from "./NefinoHomeBewerbung"
@@ -25,62 +26,64 @@ export default function NefinoHome() {
 
                 <VStack
                     ml="6"
-                    spacing={["2vw"]}
-                    mt="18vh"
+                    mt="31vh"
                     align="flex-start"
                     position="absolute"
-
+                    zIndex="10"
+                    spacing="5"
                 >
-                    <Box>
-                        <Heading fontSize={["4.8vw"]}>
-                            Nutzen des vollen Potenzials
-                        </Heading>
-                    </Box>
+
+                    <Heading fontSize={["4vw"]}>
+                        Nutzen des vollen Potenzials
+                    </Heading>
+
                     <Heading
                         pl={["6vw", "8vw"]}
                         fontSize={["5vw"]}
-                        style={{ fontFamily: "Arial" }}
+
                     >
                         erneubarer Ressourcen
                     </Heading>
-                    <Heading fontSize={["4.5vw"]} pl={["4vw", "4.8vw"]}>
-                        mit{" "}
+
+                    <Heading fontSize={["4vw"]} pl={["4vw", "4.8vw"]}>
+                        mit {" "}
                         <chakra.span
                             fontSize={["5vw"]}
-                            style={{ fontFamily: "Arial" }}
+                            fontWeight="bold"
+                            style={{ fontFamily: "Arial", fontWeight: "900" }}
                         >
                             Location Intelligence
                         </chakra.span>
                     </Heading>
+                    <Spacer />
+
+
+                    <VStack align="flex-start" spacing={{ base: "0", md: "-2" }}>
+                        <chakra.h1
+                            fontSize={["4vw"]}
+                            style={{ color: "#64B63F" }}
+                        >
+                            <chakra.p as="strong">Nefino</chakra.p> bietet leistungsstarke{" "}
+                            <chakra.p as="strong">GIS Lösungen</chakra.p>
+                        </chakra.h1>
+
+                        <chakra.h1
+                            fontSize={["3.8vw"]}
+                            style={{ color: "#64B63F" }}
+                        >
+                            für die grünen Vorreiter von Morgen
+                        </chakra.h1>
+                    </VStack>
+
 
                 </VStack>
-                <VStack
-                    ml="6"
-                    spacing='-1vw'
-                    mt="38vh"
-                    align="flex-start"
-                    position="absolute"
-                >
-                    <chakra.h1
-                        fontSize={["4vw"]}
-                        style={{ color: "#64B63F" }}
-                    >
-                        <chakra.p as="strong">Nefino</chakra.p> bietet leistungsstarke{" "}
-                        <chakra.p as="strong">GIS Lösungen</chakra.p>
-                    </chakra.h1>
-                    <chakra.h1
-                        fontSize={["3.8vw"]}
-                        style={{ color: "#64B63F" }}
-                    >
-                        für die grünen Vorreiter von Morgen
-                    </chakra.h1>
-                </VStack>
+
 
                 <Box
 
                     position="absolute"
-                    top="7vh"
-                    right="3"
+                    top="14.5vh"
+                    right="0.95"
                     width="40vw"
                     height="40vw"
                     backgroundImage="url(https://www.nefino.de/wp-content/uploads/2021/03/earth.svg)"
