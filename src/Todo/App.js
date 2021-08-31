@@ -6,7 +6,7 @@ import { DeleteIcon } from '@chakra-ui/icons'
 const App = () => {
     ////logic//////////////////////////////
     const [text, setText] = useState('')
-    const [mytasks, setMytasks] = useState(() => JSON.parse(localStorage.getItem("mytasks")) || [])
+    const [mytasks, setMytasks] = useState(() => JSON.parse(localStorage.getItem("mytasks")) || [{ id: "_23123", text: "tue was macht spass!" }, { id: "_2Sds", text: "Schreib was zu tun!" }])
 
     useEffect(() => {
         localStorage.setItem("mytasks", JSON.stringify(mytasks))

@@ -3,6 +3,7 @@ import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import Nefino from './Nefino/Nefino';
 import Todo from './Todo/App';
+import Users from './Users/App';
 //import './index.css'
 
 import reportWebVitals from './reportWebVitals';
@@ -31,6 +32,16 @@ ReactDOM.render(
     </ChakraProvider>
   </StrictMode>,
   document.getElementById('root2')
+);
+
+ReactDOM.render(
+  <StrictMode>
+    <ColorModeScript />
+    <ChakraProvider theme={theme}>
+      <Users />
+    </ChakraProvider>
+  </StrictMode>,
+  document.getElementById('root3')
 );
 
 // If you want your app to work offline and load faster, you can change
