@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-chakra-examples/static/js/main.a7d87692.chunk.js",
-    "main.js.map": "/react-chakra-examples/static/js/main.a7d87692.chunk.js.map",
+    "main.js": "/react-chakra-examples/static/js/main.bac52711.chunk.js",
+    "main.js.map": "/react-chakra-examples/static/js/main.bac52711.chunk.js.map",
     "runtime-main.js": "/react-chakra-examples/static/js/runtime-main.63a59b70.js",
     "runtime-main.js.map": "/react-chakra-examples/static/js/runtime-main.63a59b70.js.map",
     "static/js/2.aba6f361.chunk.js": "/react-chakra-examples/static/js/2.aba6f361.chunk.js",
@@ -17,6 +17,6 @@
   "entrypoints": [
     "static/js/runtime-main.63a59b70.js",
     "static/js/2.aba6f361.chunk.js",
-    "static/js/main.a7d87692.chunk.js"
+    "static/js/main.bac52711.chunk.js"
   ]
 }
