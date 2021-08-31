@@ -27,7 +27,7 @@ const Users = () => {
             users.map((user, index) => {
                 return (
                     <WrapItem w="25%" minW="220px">
-                        <VStack key={index} bg="red.100" my="4" rounded="md" p="4" w="100%" textAlign="center">
+                        <VStack key={index} bg="red.100" my="4" rounded="md" p="4" w="100%" textAlign="center" boxShadow="lg">
                             <Text >{user.name}</Text>
                             <Avatar size="2xl" bg={avatars[index]} />
                             <Text >{user.email}</Text>
